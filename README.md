@@ -1,4 +1,4 @@
-# Create a new repository on an account or repository
+# Repository Management
 
 Yet, another GitHub action that can be used to create a new repository.
 
