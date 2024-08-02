@@ -1,0 +1,39 @@
+name: "Create a repository on personal account or organization"
+description: "Creates a repository in the given user or organization account. Requires classic token with write access"
+
+inputs:
+  account:
+    description: "String - Name of the account where the repository will be created"
+    required: true
+    default: ""
+  name:
+    description: "String - Name of repository to be created"
+    required: true
+    default: ""
+  description:
+    description: "String - Description of repository to be created"
+    required: false
+    default: ""
+  access:
+    description: "Boolean - Is the repository private"
+    required: false
+    default: "false"
+  visibility:
+    description: "String - Access level ('private' or 'public')"
+    required: false
+    default: "public"
+  issues:
+    description: "Does the repository allows issues"
+    required: false
+    default: "false"
+  org-admin-token:
+    description: "Does the repository allows issues"
+    required: true
+outputs:
+  RepositoryURL:
+    description: "String - URL of the created repository"
+  RepositoryID:
+    description: "String - Numeric representation of the repository"
+runs:
+  using: "node16"
+  main: "runner/index.js"

@@ -1,0 +1,33 @@
+{
+  "name": "repo-management",
+  "version": "1.0.0",
+  "description": "This action allows you to create a new repository under an account or organization with specific data",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneComputerGuy/repo-management.git"
+  },
+  "keywords": [
+    "create",
+    "repo",
+    "github",
+    "actions"
+  ],
+  "author": "Sebastian Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OneComputerGuy/repo-management/issues"
+  },
+  "homepage": "https://github.com/OneComputerGuy/repo-management#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
