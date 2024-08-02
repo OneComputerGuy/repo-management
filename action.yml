@@ -1,5 +1,5 @@
-name: "Create a repository on personal account or organization"
-description: "Creates a repository in the given user or organization account. Requires classic token with write access"
+name: "Create repository (Personal or Organization)"
+description: "Creates a repository in the given user or organization account. Requires classic orfine grained token with write access"
 
 branding:
   icon: "box"
@@ -39,4 +39,4 @@ outputs:
     description: "String - Numeric representation of the repository"
 runs:
   using: "node20"
-  main: "runner/index.js"
+  main: "dist/index.js"
