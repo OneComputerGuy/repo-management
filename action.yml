@@ -1,15 +1,20 @@
 name: "Create a repository on personal account or organization"
 description: "Creates a repository in the given user or organization account. Requires classic token with write access"
 
+branding:
+  icon: "box"
+  color: "purple"
+
 inputs:
   account:
     description: "String - Name of the account where the repository will be created"
     required: true
-    default: ""
   name:
     description: "String - Name of repository to be created"
     required: true
-    default: ""
+  githubToken:
+    description: "Your account's GitHub token"
+    required: true
   description:
     description: "String - Description of repository to be created"
     required: false
@@ -26,14 +31,12 @@ inputs:
     description: "Does the repository allows issues"
     required: false
     default: "false"
-  org-admin-token:
-    description: "Does the repository allows issues"
-    required: true
+
 outputs:
   RepositoryURL:
     description: "String - URL of the created repository"
   RepositoryID:
     description: "String - Numeric representation of the repository"
 runs:
-  using: "node16"
+  using: "node20"
   main: "runner/index.js"
